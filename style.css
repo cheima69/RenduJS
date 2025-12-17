@@ -1,0 +1,113 @@
+/* #activite{
+    background-image: "https://www.missionevasion.fr/wp-content/uploads/2024/02/Escape-Game-Lyon-Mission-Evasion-Icone-Logo-Jeu-scaled.jpg";
+} */
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    padding-left: 35px;
+    padding-right: 35px;
+
+    .nav {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .none {
+        text-decoration: none;
+        color: #050505;
+    }
+
+    .button {
+        padding: 15px 15px;
+        background-color: #1A1817;
+        color: #F7F5F5;
+        text-decoration: none;
+        border: none;
+        width: 50px;
+
+    }
+}
+
+#activite {
+    background-color: #DE4B4B;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+        padding-bottom: 60px;
+    padding-top: 60px;
+
+
+
+}
+
+ #btn-reserver{
+    background-color: #050505;
+    color: #F7F5F5;
+    padding-top: 5px;
+    padding-right: 16px;
+    padding-left: 15px;
+    padding-bottom: 5px;
+    /* border-top-width: 0px;
+    border-left-width: 0px;
+    border-bottom-width: 0px;
+    border-right-width: 0px; */
+ }
+
+
+ body{
+     margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+}
+ 
+
+#titre-activite{
+    text-indent: 20px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+#avantages{
+display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+        padding-bottom: 60px;
+    padding-top: 60px;
+}
+
+#listeAvantages{
+      background-color: white;
+  border: 2px solid #333;
+  padding: 30px 40px;
+  width: 350px;
+  text-align: center;
+  box-sizing: border-box;
+    display: flex;
+  gap: 20px;
+}
+
+#listeTemoignages{
+    display: flex;
+    text-align: center;
+    gap: 100px;
+}
+
+  #liste-services{
+      width: 1030px;
+    margin: auto;
+       display: flex;
+    flex-wrap: wrap;
+    width: 310px;
+
+    img {
+        width: 20%;
+
+    }
+  }

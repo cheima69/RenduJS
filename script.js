@@ -13,25 +13,57 @@ fetch("https://js-dynamic-portfolio-data-makerslab-emlyon-cdweb-8f83155c64a0cc.g
     .then(response => response.json())
     .then(data => {
 
-        const container = document.getElementById("container");
-        const menu = document.getElementById("menu");
-        const activite = document.getElementById("activite");
+        // const container = document.getElementById("container");
+        // const menu = document.getElementById("menu");
+        // const activite = document.getElementById("activite");
         const titre = document.getElementById("titre-activite");
         const texte = document.getElementById("texte-activite");
         const reserverbtn = document.getElementById("btn-reserver");
-        const avantages = document.getElementById("avantages");
+        // const avantages = document.getElementById("avantages");
         const liste = document.getElementById("listeAvantages");
-        const footer = document.getElementById("footer");
+        // const footer = document.getElementById("footer");
+
+
+
+        // const avantage = document.createElement("div");
+
+// Création du titre
+// const titr = document.createElement("h3");
+// titre.textContent = "Avantage 1";
+
+// Création du texte
+// const text = document.createElement("p");
+// texte.textContent = "Nous sélectionnons les meilleurs matériaux du monde";
+
+// Ajout des éléments dans la carte
+// avantage.appendChild(titr);
+// avantage.appendChild(text);
+
+// Ajout de la carte au body
+// document.body.appendChild(avantage);
+
+
+
+
+
+
+
 
         titre.textContent = data.nomCommercial;
         texte.textContent = data.phraseAccroche;
         reserverbtn.textContent = data.texteAppelAction;
 
         data.avantagesClients.forEach(element => {
+            
             const para = document.createElement("p");
             para.textContent = element;
+            const titre=document.createElement("titre");
             liste.appendChild(para);
+            para.appendChild(titre);
         });
+
+
+        
 
         // Test pour services => 
 
@@ -49,6 +81,10 @@ fetch("https://js-dynamic-portfolio-data-makerslab-emlyon-cdweb-8f83155c64a0cc.g
             desc.textContent = game.description;
             const image = document.createElement("img");
             image.src = game["image-url"];
+            const card = document.createElement("card");
+            // const escape= document.createElement("img");
+
+            // escape.style["background-image"]="https://www.missionevasion.fr/wp-content/uploads/2024/02/Escape-Game-Lyon-Mission-Evasion-Icone-Logo-Jeu-scaled.jpg"
 
 
             services.appendChild(div);
@@ -56,6 +92,8 @@ fetch("https://js-dynamic-portfolio-data-makerslab-emlyon-cdweb-8f83155c64a0cc.g
             div.appendChild(desc);
             div.appendChild(image);
         })
+
+        // balise.style["back-img"] = "url ou lien image";
 
 
         const div = document.getElementById("listeTemoignages");
@@ -122,7 +160,7 @@ fetch("https://js-dynamic-portfolio-data-makerslab-emlyon-cdweb-8f83155c64a0cc.g
 
 
 // Afficher la section services
-//     afficher le titre "Vos sneakers, votre style"
+//     afficher le titre 
 
 //     pour chaque service
 //         afficher un bloc avec
@@ -142,15 +180,3 @@ fetch("https://js-dynamic-portfolio-data-makerslab-emlyon-cdweb-8f83155c64a0cc.g
 //             la note
 //             le commentaire
 //             le nom du client
-
-
-
-
-
-
-
-
-// Afficher le pied de page
-//     afficher le nom de l’entreprise
-//     afficher les liens légaux
-//     afficher les réseaux sociaux
