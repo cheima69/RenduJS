@@ -58,23 +58,34 @@ fetch("https://js-dynamic-portfolio-data-makerslab-emlyon-cdweb-8f83155c64a0cc.g
         })
 
 
-        const div= document.getElementById("listeTemoignages");
+        const div = document.getElementById("listeTemoignages");
+      
         // const temoin=document.getElementById("temoignages");
 
         data.temoignages.forEach(element => {
             console.log(element);
 
-
+            const card = document.createElement("card");
             const h4 = document.createElement("h4");
             h4.textContent = element.prenom;
+            const type = document.createElement("typeExperience");
+            type.textContent = element.typeExperience;
+            const com = document.createElement("commentaire");
+            com.textContent = element.commentaire;
+            const note = document.createElement("note");
+            note.textContent = element.note;
+
 
             // const experience= document.createElement("p");
             // p.textContent= element.typeExperience;
 
-        
-            div.appendChild(h4);
+            div.appendChild(card);
+            card.appendChild(h4);
+            card.appendChild(type);
+            card.appendChild(com);
+            card.appendChild(note);
 
-           
+
         });
 
 
